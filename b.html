@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>גרסה ב · מקומך איתנו · גיוס מטפלים ומטפלות</title>
+<link rel="preload" as="image" href="img/park.webp">
+<link rel="stylesheet" href="base.css">
+<style>
+body{background:var(--navy);color:#fff}
+:focus-visible{outline-color:var(--orange)}
+.top{background:#fff;color:var(--navy)}
+.top .wrap{display:flex;justify-content:center;align-items:center;min-height:64px}
+.top .logo img{height:34px}
+/* AMBIENT MOTION. Transform only. The photo drifts, three warm light fields float across the hero and the page. */
+.hero{position:relative;min-height:min(calc(100svh - 64px),780px);display:grid;align-items:end;overflow:hidden;isolation:isolate}
+.hero .bg{position:absolute;inset:-6% -6% 34% -6%;z-index:-3}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transform-origin:50% 40%;animation:drift 14s ease-in-out infinite alternate;will-change:transform}
+@keyframes drift{from{transform:scale(1.03) translate3d(-2.600%,.600%,0)}to{transform:scale(1.17) translate3d(2.600%,-2.200%,0)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(to top,var(--navy) 0,var(--navy) 35%,rgba(26,30,81,.6) 48%,rgba(26,30,81,.05) 70%,rgba(26,30,81,0) 100%)}
+.light{position:absolute;z-index:-1;border-radius:50%;pointer-events:none;will-change:transform;mix-blend-mode:screen}
+.light.l1{width:62vmin;height:62vmin;inset-inline-start:-18vmin;top:6%;background:radial-gradient(closest-side,rgba(243,124,41,.6),rgba(243,124,41,0));animation:l1 16s ease-in-out infinite alternate}
+.light.l2{width:48vmin;height:48vmin;inset-inline-end:-12vmin;top:34%;background:radial-gradient(closest-side,rgba(252,217,161,.5),rgba(252,217,161,0));animation:l2 20s ease-in-out infinite alternate}
+.light.l3{width:70vmin;height:70vmin;inset-inline-start:20%;bottom:-30vmin;background:radial-gradient(closest-side,rgba(243,124,41,.4),rgba(243,124,41,0));animation:l3 18s ease-in-out infinite alternate}
+@keyframes l1{to{transform:translate3d(-34vmin,22vmin,0) scale(1.25)}}
+@keyframes l2{to{transform:translate3d(30vmin,-20vmin,0) scale(.8)}}
+@keyframes l3{to{transform:translate3d(-26vmin,-24vmin,0) scale(1.2)}}
+.glow{position:relative;overflow:hidden;isolation:isolate}
+@media (prefers-reduced-motion:reduce){.hero .bg img,.light{animation:none}}
+.hero .wrap{padding-bottom:clamp(110px,14vw,150px);padding-top:60px}
+.hero h1{font-size:clamp(3.4rem,1.6rem + 9vw,6rem);line-height:.98;letter-spacing:-.015em}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero p{margin:14px auto 22px;max-width:30ch;line-height:1.35}
+@media (min-width:900px){.hero p{max-width:60ch}.hero p .own{display:block}}
+@media (min-width:900px){.hero .bg{inset:-6% -4% 30% -4%}.hero .bg img{object-position:50% 22%}}
+.sheet{position:relative;z-index:2;margin-top:clamp(-120px,-11vw,-84px)}
+.sheet .card{background:#fff;color:var(--navy);border-radius:var(--r);padding:22px 20px 24px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);max-width:980px;margin-inline:auto}
+.fh{font-size:var(--fs-h3);line-height:1.25}
+@media (min-width:900px){.sheet .card{padding:28px 36px 30px}.lead{grid-template-columns:repeat(3,1fr);align-items:start;column-gap:16px}.lead>h2{grid-column:1/-1}.lead .check-wrap{grid-column:1/3;align-self:center}.lead .btn{margin-top:0}}
+.where{padding-bottom:calc(var(--sec)*.5)}
+.where .places li{border-color:rgba(255,255,255,.6)}
+.grant h2 b{display:block;font-size:clamp(3.4rem,2rem + 7vw,5.500rem);line-height:1.05;color:var(--orange)}
+.grant p{margin-top:10px;color:#eeeef7}
+.role{background:var(--linen);color:var(--navy)}
+.role .wrap{display:grid;gap:22px}
+.role p{margin-top:10px}
+.role img{border-radius:var(--r);aspect-ratio:4/3;object-fit:cover;object-position:60% 30%;width:100%}
+@media (min-width:900px){.role .wrap{grid-template-columns:1fr 1fr;align-items:center;gap:56px}}
+.list h2{margin-bottom:clamp(12px,2vw,22px)}
+.list ul{max-width:900px;margin-inline:auto}
+.list li{padding:.34em 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:clamp(1.7rem,1.1rem + 3vw,3rem);font-weight:700;line-height:1.15}
+.list li:nth-child(even){color:var(--orange)}
+.list .note{margin-top:18px;color:#eeeef7}
+.close{padding-top:0}
+@media (max-width:899px){.close{display:none}}
+.foot{border-top:1px solid rgba(255,255,255,.18);color:#eeeef7}
+.stick{background:rgba(26,30,81,.97);border-top-color:rgba(255,255,255,.18)}
+@media (hover:hover) and (pointer:fine){.btn:hover{box-shadow:0 10px 18px -8px rgba(0,0,0,.6)}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="logo" href="#"><img src="img/logo.png" alt="עמל ומעבר"><span>טיפולי בית</span></a></div></header>
+<main>
+<div class="hero" data-hero>
+  <div class="bg"><picture><source srcset="img/park.webp" type="image/webp"><img src="img/park.jpg" width="1600" height="1194" alt="מטפל צעיר ואיש מבוגר צוחקים יחד בפארק"></picture></div>
+  <span class="light l1" aria-hidden="true"></span><span class="light l2" aria-hidden="true"></span>
+  <div class="wrap">
+    <h1>מקומך <em>איתנו</em></h1>
+    <p>משפחת עמל מתרחבת, ואנחנו מגייסים מטפלים ומטפלות לטיפול ביתי בקשישים. <span class="own">לא צריך ניסיון.</span></p>
+    <a class="btn" href="#form">להשארת פרטים</a>
+  </div>
+</div>
+
+<div class="sheet" id="form"><div class="wrap"><div class="card">
+  <form class="lead" data-v="b" novalidate>
+      <h2 class="fh">השאירו פרטים ונחזור אליך בהקדם</h2>
+      <div class="field"><label for="b-name">שם מלא</label><input id="b-name" name="name" autocomplete="name" required><span class="err">חסר שם מלא, פרטי ומשפחה</span></div>
+      <div class="field"><label for="b-tel">טלפון</label><input id="b-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="050-0000000" required><span class="err">מספר הטלפון לא תקין</span></div>
+      <div class="field"><label for="b-city">עיר מגורים</label><input id="b-city" name="city" autocomplete="address-level2" required><span class="err">חסרה עיר מגורים</span></div>
+      <div class="check-wrap"><label class="check"><input type="checkbox" name="age" required>אני מעל גיל 18</label><span class="err">צריך לאשר שגילך מעל 18</span></div>
+      <button class="btn" type="submit">שליחת הפרטים</button>
+    </form>
+</div></div></div>
+
+<div class="glow">
+<span class="light l1" aria-hidden="true" style="top:2%"></span><span class="light l3" aria-hidden="true" style="bottom:auto;top:20%"></span>
+<section class="where"><div class="wrap">
+  <h2>איפה אנחנו מגייסים עכשיו</h2>
+  <ul class="places"><li>ירושלים</li><li>אשדוד</li><li>חיפה</li><li>נתניה</li><li>ראש העין</li><li>ראשון לציון</li><li>נהריה</li></ul>
+</div></section>
+<section class="grant"><div class="wrap">
+  <h2>מענק הצטרפות של <b>1,200 ₪</b></h2>
+  <p>לבעלי ובעלות תעודת מטפל מיומן. המקצועיות שלך שווה יותר.</p>
+</div></section>
+</div>
+
+<section class="role"><div class="wrap">
+  <div>
+    <h2>מה עושים בתפקיד</h2>
+    <p>מלווים ומסייעים לקשישים בשגרת <span style="white-space:nowrap">היום-יום</span>, אצלם בבית. נותנים טיפול אישי ותומכים בעצמאות שלהם.</p>
+  </div>
+  <picture><source srcset="img/home.webp" type="image/webp"><img src="img/home.jpg" width="1600" height="1194" loading="lazy" alt="מטפלת צעירה מחייכת והולכת שלובת זרוע עם אישה מבוגרת בסלון ביתי"></picture>
+</div></section>
+
+<div class="glow">
+<span class="light l2" aria-hidden="true" style="top:8%"></span><span class="light l3" aria-hidden="true"></span>
+<section class="list"><div class="wrap">
+  <h2>מה מחכה לך אצלנו</h2>
+  <ul><li>שעות עבודה גמישות</li><li>הכשרה מקצועית וליווי</li><li>מקום עבודה יציב</li><li>אווירה משפחתית</li><li>סניפים בפריסה ארצית</li></ul>
+  <p class="note">אין צורך בניסיון קודם. אנחנו נלמד אותך את המקצוע ונלווה אותך לאורך הדרך, כולל קורסים מקצועיים להכשרה כמטפל.ת מיומן.ת מטעם הארגון.</p>
+</div></section>
+<section class="close"><div class="wrap"><a class="btn" href="#form">להשארת פרטים</a></div></section>
+</div>
+</main>
+<footer class="foot"><div class="wrap">
+  <span>עמל ומעבר, טיפולי בית</span>
+  <nav><a href="https://www.amalgroup.co.il/privacypolicy">מדיניות פרטיות</a><a href="https://www.amalgroup.co.il/terms-of-use">תנאי שימוש</a></nav>
+</div></footer>
+<div class="stick"><a class="btn" href="#form">להשארת פרטים</a></div>
+<script src="form.js"></script>
+</body>
+</html>

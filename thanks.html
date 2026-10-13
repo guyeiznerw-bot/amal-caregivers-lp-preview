@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>תודה · עמל ומעבר טיפולי בית</title>
+<link rel="stylesheet" href="base.css">
+<style>
+body{min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;background:var(--linen)}
+.top{background:#fff;border-bottom:1px solid var(--line)}.top .wrap{display:flex;justify-content:center;min-height:76px;align-items:center}
+main{display:grid;place-content:center;padding:var(--sec) var(--gutter)}
+.mark{width:92px;height:92px;margin:0 auto 22px;border-radius:50%;background:var(--orange);display:grid;place-content:center}
+.mark svg{width:44px;height:44px;fill:none;stroke:var(--navy);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+h1{font-size:var(--fs-h2)}p{margin-top:12px}.btn{margin-top:26px}
+.foot{background:#fff;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="logo" href="#"><img src="img/logo.png" alt="עמל ומעבר"><span>טיפולי בית</span></a></div></header>
+<main><div>
+  <div class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.500l4.500 4.500L19 7.500"/></svg></div>
+  <h1>תודה, הפרטים התקבלו</h1>
+  <p>נחזור אליך.</p>
+  <a class="btn" id="back" href="a.html">חזרה לעמוד</a>
+</div></main>
+<footer class="foot"><div class="wrap"><span>עמל ומעבר, טיפולי בית</span><nav><a href="https://www.amalgroup.co.il/privacypolicy">מדיניות פרטיות</a><a href="https://www.amalgroup.co.il/terms-of-use">תנאי שימוש</a></nav></div></footer>
+<script>var v=new URLSearchParams(location.search).get('v');if(/^[abc]$/.test(v))document.getElementById('back').href=v+'.html';</script>
+</body>
+</html>
